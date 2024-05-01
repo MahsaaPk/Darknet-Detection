@@ -1,5 +1,12 @@
 # Darknet-Detection
 
+![GitHub all releases](https://img.shields.io/github/downloads/{MahsaaPk}/{Darknet-Detection}/total)
+![GitHub language count](https://img.shields.io/github/languages/count/{MahsaaPk}/{Darknet-Detection})
+![GitHub top language](https://img.shields.io/github/languages/top/{MahsaaPk}/{Darknet-Detection}?color=yellow)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/{MahsaaPk}/{Darknet-Detection})
+![GitHub forks](https://img.shields.io/github/forks/{MahsaaPk}/{Darknet-Detection}?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/{MahsaaPk}/{Darknet-Detection}?style=social)
+
 ## Introduction
 Organizations and individuals are at serious risk 
 for  security  breaches  thanks  to  the  darknet,  which  gives 
@@ -46,7 +53,7 @@ Darknet, characterized as unused address space, operates passively accepting inc
 The dataset originates from groundbreaking research aiming to detect and characterize VPN and Tor applications, representative of darknet traffic. Characteristics encompass a spectrum of standard network flow metrics, including source and destination IP addresses, port numbers, communication protocols, flow duration, and packet counts and lengths. A crucial feature, 'Flow Bytes/s,' underwent preprocessing, with 47 missing values judiciously dropped due to their minimal impact relative to the dataset size.
 Within the [CICDarknet2020 dataset](https://www.unb.ca/cic/datasets/darknet2020.html), a two-layered approach generates both benign and darknet traffic in Table 1, further categorized into distinct types associated with specific applications in Table 2. It can be observed in Fig. 1, dataset details outline the number of samples for benign and darknet traffic, providing insights into the complexity and diversity of the dataset.
 
-Table 1: Dataset Characteristics and Scenario 1 target labels
+*Table 1: Dataset Characteristics and Scenario 1 target labels*
 | Attribute  | Descriction | 
 | :---         |     :---:      |    
 | Instances  | 141,530 |
