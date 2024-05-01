@@ -1,11 +1,5 @@
 # Darknet-Detection
 
-### Our Contributors ✨
-
-<a href="https://github.com/mfts/papermark/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mfts/papermark" />
-</a>
-
 ## Introduction
 Organizations and individuals are at serious risk 
 for  security  breaches  thanks  to  the  darknet,  which  gives 
