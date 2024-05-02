@@ -70,7 +70,10 @@ Within the [CICDarknet2020 dataset](https://www.unb.ca/cic/datasets/darknet2020.
 <br>
 
 <img src="https://github.com/MahsaaPk/Darknet-Detection/assets/138306478/464284ad-9c46-4912-bcca-77f66f8859a3" width="400" height="300">
+
 *Fig. 1. Visual Representation of the dataset*
+
+<br>  
 
 ## Methodology
 
@@ -92,6 +95,8 @@ Furthermore, for better evaluation of our results, we used k-fold cross-validati
 ### Discussion
 In the binary classification we aimed at distinguishing between benign and darknet traffic, a set of initial models, including Random Forest, Decision Tree, K-Nearest Neighbors, Logistic Regression, and XGBoost, were thoroughly evaluated. Table 7 demonstrates these models’ performances. The Random Forest model exhibited exceptional performance with precision n, recall, and F1-score values of 0.997 each, demonstrating its accuracy and proficiency in differentiating between benign and darknet traffic instances. Similarly, the Decision Tree model showed commendable recall (0.996) and an F1-Score of 0.996, emphasizing its effectiveness. K-Nearest Neighbors demonstrated robust performance with a recall of 0.991 and an F1-Score of 0.991. Logistic Regression and XGBoost showcased strong precision (0.998), recall (0.998), and F1-Score (0.998) values, indicating their ability to accurately identify positive instances. These models are integral components of the comprehensive evaluation process. Beyond the baseline models, the analysis progressed to consider more intricate ensemble approaches, specifically NN + XGBoost and NN + Random Forest. The NN + XGBoost ensemble exhibited competitive performance, achieving a recall and F1-Score of 0.99. However, it did not surpass the perfection observed in some baseline models. In contrast, the NN + Random Forest ensemble emerged as a standout performer, achieving perfect precision, recall, and F1-Score values of 1.00. These flawless metrics signify an optimal balance and accuracy in distinguishing between benign and darknet traffic instances, positioning the ensemble as a robust and advanced solution. In comparison to the baseline models, the ensemble approaches, particularly the NN + Random Forest, elevated the overall performance to unprecedented levels.
 
+<br>  
+
 *Table 7: Binary Classification Results*
 | Model  | Precision | Recall | F1-Score
 | :---         |     :---:      |    :---:      |    :---:      |   
@@ -103,9 +108,12 @@ In the binary classification we aimed at distinguishing between benign and darkn
 | NN + XGBoost | 0.99 | 0.99 | 0.99 |
 |  NN + Random Forest | 1.00 | 1.00 | 1.00 |
 
+<br>  
 
 While for the multi-class classification, the ensemble models, NN + Random Forest and NN + XGBoost and Random Forest + XGBoost exhibited commendable performance with a consistent precision, recall, and F1-score of 0.89, 0.89 and 0.926 respectively. It is important to note that the results of NN + Random Forest and NN + XGBoost while good, did not surpass the baseline models. The baseline models, including Random Forest, Decision Tree and XGBoost achieved slightly higher performance with precision, recall, and F1-score values ranging from 0.915 to 0.926 as shown in Table 8. However, Random Forest + XGBoost outperforms all of the baseline models.
 The ensemble models' performance, though not surpassing all the baselines, still reflects a solid and competitive outcome. These results suggest that the combination of Neural Networks with Random Forest or XGBoost contributed to effective classification but did not yield a significant improvement over the individual baseline models. While Random Forest + XGBoost had a great competition against the baseline models. Though, Further refinement and tuning may be explored to enhance the ensemble models' performance and potentially surpass all the baseline models in future iterations.
+
+<br>  
 
 *Table 8: Multi-class Classification Results*
 | Model  | Precision | Recall | F1-Score
@@ -117,7 +125,11 @@ The ensemble models' performance, though not surpassing all the baselines, still
 |  NN + Random Forest | 0.89 | 0.89 | 0.89 |
 |  Random Forest + XGBoost | 0.931 | 0.925 | 0.926 |
 
+<br>  
+
 Figures 2 and 3 is the confusion matrix of NN + Random Forest and Random Forest + XGBoost models, showing the difference between the original truth value and the model's predicted value. The results shown in the confusion matrices affirm the overall effectiveness of the models in correctly classifying both binary and multi-class darknet traffic scenarios. The high counts of TP and low counts of FP and FN demonstrate the models' proficiency and reliability in distinguishing between different classes, reinforcing their practical utility in cybersecurity applications.
+
+<br>  
 
 <img src="https://github.com/MahsaaPk/Darknet-Detection/assets/138306478/e37e809f-6a5e-442c-8105-d55694f91638" width="400" height="300">
 
@@ -128,6 +140,8 @@ Figures 2 and 3 is the confusion matrix of NN + Random Forest and Random Forest 
 <img src="https://github.com/MahsaaPk/Darknet-Detection/assets/138306478/1f3b7b72-cae6-48c3-8705-14b072b0bfc2" width="400" height="300">
 
 *Fig. 3. Confusion Matrix of Random Forest+XGBoost for multi-class classification*
+
+<br>  
 
 The results we obtained emphasize the importance of our study, in the field of detecting darknet traffic and enhancing cybersecurity. The binary classification results clearly show how effective our ensemble models, NN + Random Forest, are in distinguishing between darknet traffic. The precision, recall, and F1 score metrics provide an evaluation that confirms the model's high accuracy and strong performance.
 Our study successfully accomplished its goal of improving cybersecurity through the development and validation of detection mechanisms. Analyzing the tradeoff between precision and recall in binary classification highlights the strengths of each model, which supports our assertion that the NN + Random Forest model outperforms others across evaluation metrics. An F1 score of 1.00 indicates a balanced combination of precision and recall, further reinforcing the reliability of this model in identifying darknet traffic. While our ensemble models demonstrate performance, it's important to acknowledge their limitations. The effectiveness of these models might depend on factors such as the quality and representativeness of the training dataset. Real world variations in darknet scenarios could present challenges that require updates and adaptations to address. Additionally, scalability in large scale network environments may be influenced by resources.
